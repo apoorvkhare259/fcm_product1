@@ -17,5 +17,9 @@ public class AppTest
         boolean status =  ap1.login("admin", "admin");
          Assert.assertEquals(status, true);
     }    
+    void test2(){
 
+        boolean status =  ap1.login("admin1234", "admin12");
+         Assert.assertEquals(status, false);
+    }
 }
